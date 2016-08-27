@@ -17,7 +17,7 @@ Should be about the same from the usability point of view as is done in iOS and 
 It's quite easy to get e.g. Kate, a text editor, consume 1.3 GiB on zero open files.
 And no, no gc involved — it's written in C++ and Qt.
 And no, that is not caused by memory leaks.
-And no, that memory is actually being blocked and is returned to the system.
+And no, that memory is actually being blocked and is not returned to the system.
 
 This happens because of internal glibc memory malloc optimizations for some common cases,
 due to which it uses `sbrk()` to allocate small memory chunks by extending the DS.
