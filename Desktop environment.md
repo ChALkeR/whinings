@@ -65,6 +65,6 @@ isn't going to make those users feel comfortable or create a good experience for
 _Note: I am aware about the QtWebKit alternative engine, but QtWebKit from Qt 4.x is also something you don't want._
 _And it's not enabled by defaut._
 
-Regardning browsers — I am not saying «use _{x}_, it is perfect» — that is not what I mean here.
+Regarding browsers — I am not saying «use _{x}_, it is perfect» — that is not what I mean here.
 Atm, embedding Blink (e.g. QtWebEngine) _seems_ like the best solution to me (I might be wrong, though),
 but I really hope that Servo will beat it someday.
