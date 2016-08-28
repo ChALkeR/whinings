@@ -45,3 +45,23 @@ Seriously, it's 2016, and there are still raster icons in random places, and tho
 Vector icons could be rendered only the first time and cached, so the performance is not the issue here.
 Some source images are incompatible with different renderers and are displayed correctly only in the editor,
 because of subtle rendering bugs, but that could be fixed, as those icons are quire rare.
+
+## Out of the box experience
+
+### Most things should just work
+
+#### Example: Konqueror
+
+I really am not sure what is the point in bundling a browser that doesn't work in a stable release.
+
+Konqueror can't even correctly render it's own website, also it doesn't support HiDPI — a significant amount of
+todays hardware, and even manual scaling doesn't work as it's supposed to.
+
+I appreciate the work done to bring KTML to live, and that was the origins of WebKit and then Blink.
+I used Konqueror myself as my main browser for some significant amount of time, and I was happy with that.
+But we really should move forward, and installing a browser that doesn't work for users as the default one
+isn't going to make those users feel comfortable or create a good experience for them.
+
+Regardning browsers — I am not saying «use _{x}_, it is perfect» — that is not what I mean here.
+Atm, embedding Blink (e.g. QtWebEngine) _seems_ like the best solution to me (I might be wrong, though),
+but I really hope that Servo will beat it someday.
