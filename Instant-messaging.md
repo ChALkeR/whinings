@@ -23,6 +23,7 @@ _Note: this is a conjunction._
 _Note: this is a disjunction._
 
 * Authentication through SMS codes as the only or default method
+* Any other reason for binding accounts to mobile phone numbers
 * Server-side logs in plaintext
 * Priorities for devices, separate delivery — you receive messages at random devices
 * No log sync
