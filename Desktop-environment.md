@@ -75,4 +75,4 @@ but I really hope that Servo will beat it someday.
 
 #### Example: Dolphin
 
-Dolphin is mostly great.
+Dolphin is mostly great, it works nicely out of the box.
