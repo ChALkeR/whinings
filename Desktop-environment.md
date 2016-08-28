@@ -46,6 +46,10 @@ Vector icons could be rendered only the first time and cached, so the performanc
 Some source images are incompatible with different renderers and are displayed correctly only in the editor,
 because of subtle rendering bugs, but that could be fixed, as those icons are quire rare.
 
+### Proper gradients
+
+E.g. on huge vector wallpapers by default, gradient banding is undesired. Adding a noise doesn't help — gradients should be property dithered, separately for each wallpaper resolution.
+
 ## Out of the box experience
 
 ### Most things should just work
@@ -68,3 +72,7 @@ _And it's not enabled by defaut._
 Regarding browsers — I am not saying «use _{x}_, it is perfect» — that is not what I mean here.
 Atm, embedding Blink (e.g. QtWebEngine) _seems_ like the best solution to me (I might be wrong, though),
 but I really hope that Servo will beat it someday.
+
+#### Example: Dolphin
+
+Dolphin is mostly great.
