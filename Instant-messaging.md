@@ -15,6 +15,8 @@ _Note: this is a conjunction._
 * File transfer
 * Sensible protection from stealing an authorized device
 * Stealing an authorized device shouldn't make previous traffic decryptable
+* Chat rooms (aka groups), private or public
+* Audio/video multiconference, private or public
 
 ## How?
 
