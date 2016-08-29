@@ -25,7 +25,7 @@ _Note: this is a conjunction._
 
  * No centralized servers.
  * Users should have their private/public keys, stored at each device. Those should be unique per user device, no need to copy them («device» here and below is actually a user profile on a PC, a phone, or any other hardware device).
- * No profile «copying» between devices, they should just acknowledge each other as being the same virtual account and start syncing their state (logs, contacts).
+ * No profile «copying» between devices, they should just acknowledge each other as being the same virtual account and start syncing their state (logs, contacts), and promote each other as an alternative device to other people's contact list.
  * Any message to any user device gets copied to all their devices as soon as they get online.
  * An ability to «untrust» a device from other devices is needed — for removed or stolen devices.
  * No «offline» messages technically, but they are not blocking — Alice could write anything to Bob at any time — it's queued on Alice device, once that Alice device gets online — it's copied to all Alice devices that are online, once any Bob device gets online — it's copied there, once any other Bob devices get onlined — it's copied there from Alice or Bob devices.
@@ -39,7 +39,16 @@ _Note: this is a conjunction._
  * Contacts could be transfered between users, shared as an ID or QR code. Even nameservers is possible that provide `user@example.com` usernames as a mean of sharing an user ID (which actually includes a pubkey), but those are of course marked as «unvalidated».
  * Voice and video, file transfer — stuff like this should be possible once you implement secure routing between clients. Voice and video should not be synced between user devices by default — there is no need for that, but perhaps making it possible would have some benefits.
  * The client may or may not store transmitted files as regular messages, but if it does — it should sync them between clients of one user.
+ * Device public key is used only for initalizing a session, i.e. session key exchange. Further conversation is encrypted using session keys, which are auto-renewed and get disposed of fast. We do need perfect forward secrecy.
  * For crypto, use [libsodium](https://github.com/jedisct1/libsodium), _and_ make sure you don't do awful stuff like comparing keys with `memcmp` or running `memset`+`free`.
+ * Deleting logs is also a state change, but that promotes only to users _own_ devices. It also blacklists those logs so they are not received anymore.
+
+## Caveats and TODO
+
+ * The person you are talking to will see how many «devices» do you have and when you switch them. Some could be associated with work/home. Not sure if this an actual issue given that current instant messengers deliberately display when the user uses a phone, also e.g. Jabber has different priorities and clients — they leak the same information. _We could try to solve this with rotation, though._
+ * No true «offline» messages — those will get delivered only when the sender and the recepient will have at least one device online at the same moment. Given how often people are online now, mobile phones and desktop PCs — this is probably a better choice then queing the messages elsewhere. Users could work-around that by having an instance running somewhere. Another way would be to introduce optional log servers, that will keep undelivered messages for a short period of time (day/week), without being able to look into them (remember — those are encrypted with end-to-end encryption). Not sure that is needed, though.
+ * Voice and video could require some work to reduce lags. Or not.
+ * Chat rooms are not yet covered here in details, but they also should be done via state synchronization between all members.
 
 ## What does an insane instant messenger look like?
 
