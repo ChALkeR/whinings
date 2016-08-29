@@ -45,3 +45,10 @@ _Note: this is a disjunction._
 ### Slack
 
 ### Gitter
+
+### Tox
+
+### Irc
+
+### Skype
+
