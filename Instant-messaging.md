@@ -17,6 +17,9 @@ _Note: this is a conjunction._
 * Stealing an authorized device shouldn't make previous traffic decryptable
 * Chat rooms (aka groups), private or public
 * Audio/video multiconference, private or public
+* No self-invented crypto, instead built on existing libraries
+* Cross-platform, work on any devices
+* FLOSS
 
 ## How?
 
