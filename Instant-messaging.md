@@ -13,7 +13,7 @@ _Note: this is a conjunction._
 * Messages should be received by all devices at the same time, no blocking and no «priorities»
 * Voice and video
 * File transfer
-* Sensible protection from stealing an authorized device
+* Sensible protection from stealing an authorized device (to the extent possible)
 * Stealing an authorized device shouldn't make previous traffic decryptable
 * Chat rooms (aka groups), private or public
 * Audio/video multiconference, private or public
