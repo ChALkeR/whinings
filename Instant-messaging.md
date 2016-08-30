@@ -42,14 +42,17 @@ _Note: this is a conjunction._
  * Device public key is used only for initalizing a session, i.e. session key exchange. Further conversation is encrypted using session keys, which are auto-renewed and get disposed of fast. We do need perfect forward secrecy.
  * For crypto, use [libsodium](https://github.com/jedisct1/libsodium), _and_ make sure you don't do awful stuff like comparing keys with `memcmp` or running `memset`+`free`.
  * Deleting logs is also a state change, but that promotes only to users _own_ devices. It also blacklists those logs so they are not received anymore.
+ * Chat rooms also could be done via state synchronization between all members. They could have access permissions enforced by the creator — they should just sign the «permissions state» of the room. More moderators or even admins could be added in such a way.
+ * In chat rooms, receiving a message older than the last one could be blocked until at least a certain amount of users confirm it, in a way so that message should be put to the end in the list, according to when it was actually received by the client. Logs should also be received from admins/moderators or a certain amount of regular users to be displayed. This should be done to protect from the sutuation when a users spoofs their own messages as sent long time ago (e.g. tries to insert them in logs).
+ * In _large_ and/or public chat rooms, the above restrictions could be not enough — a huge number of bots could spoof logs. In this situation, for large and/or public rooms, admins/moderators could enable a mode where logs are only trusted when received from admins/moderators or are signed by them. This could be even enabled automatically after the participants count reaches a certain threshold.
 
 ## Caveats and TODO
 
  * The person you are talking to will see how many «devices» do you have and when you switch them. Some could be associated with work/home. Not sure if this an actual issue given that current instant messengers deliberately display when the user uses a phone, also e.g. Jabber has different priorities and clients — they leak the same information. _We could try to solve this with rotation, though._
  * No true «offline» messages — those will get delivered only when the sender and the recepient will have at least one device online at the same moment. Given how often people are online now, mobile phones and desktop PCs — this is probably a better choice then queing the messages elsewhere. Users could work-around that by having an instance running somewhere. Another way would be to introduce optional log servers, that will keep undelivered messages for a short period of time (day/week), without being able to look into them (remember — those are encrypted with end-to-end encryption). Not sure that is needed, though.
- * Voice and video could require some work to reduce lags. Or not.
- * Chat rooms are not yet covered here in details, but they also should be done via state synchronization between all members.
-
+ * Voice and video could require some work to reduce lag. Or not.
+ * Spam/bot protection in chat rooms is not covered here.
+ 
 ## What does an insane instant messenger look like?
 
 _Note: this is a disjunction._
