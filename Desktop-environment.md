@@ -46,7 +46,7 @@ Hint: check out `fatrace`.
 Seriously, it's 2016, and there are still raster icons in random places, and those look blurry.
 Vector icons could be rendered only the first time and cached, so the performance is not the issue here.
 Some source images are incompatible with different renderers and are displayed correctly only in the editor,
-because of subtle rendering bugs, but that could be fixed, as those icons are quire rare.
+because of subtle rendering bugs in the editor where the image was created  (hello, `inkscape`), but that could be fixed, as those icons are quire rare.
 
 ### Proper gradients
 
