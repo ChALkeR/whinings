@@ -37,6 +37,8 @@ Does it perform read operations on `/etc/passwd` 130 times per second?
 Does it perform write operations in browser profile every second, even when you are doing nothing?
 Things like that shouldn't happen, but they are quite common.
 
+Hint: check out `fatrace`.
+
 ## Looks
 
 ### Vector icons everywhere
