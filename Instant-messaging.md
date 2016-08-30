@@ -20,6 +20,7 @@ _Note: this is a conjunction._
 * No self-invented crypto, instead built on existing libraries
 * Cross-platform, work on any devices
 * FLOSS
+* Message delivery should be guaranteed, i.e. if a message was not delivered for some reason — it should be resent.
 
 ## How?
 
