@@ -52,6 +52,7 @@ _Note: this is a conjunction._
  * No true «offline» messages — those will get delivered only when the sender and the recepient will have at least one device online at the same moment. Given how often people are online now, mobile phones and desktop PCs — this is probably a better choice then queing the messages elsewhere. Users could work-around that by having an instance running somewhere. Another way would be to introduce optional log servers, that will keep undelivered messages for a short period of time (day/week), without being able to look into them (remember — those are encrypted with end-to-end encryption). Not sure that is needed, though.
  * Voice and video could require some work to reduce lag. Or not.
  * Spam/bot protection in chat rooms is not covered here.
+ * Mobile — push updates or similar, i.e. don't consume resources in background, but still be able to receive messages.
  
 ## What does an insane instant messenger look like?
 
