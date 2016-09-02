@@ -78,15 +78,54 @@ _Note: this is a disjunction._
 
 ### Jabber
 
+ * End-to-end encryption (OTR) is optional and is seldomly used.
+ * A lot of extensions (XEPs), everything is implemented though them. Part of those were never finished, part of those are already dead.
+ * As a result — a lot of incompatible clients that don't work with basic features.
+ * No long sync usually.
+ * When log sync is present — it's done by storing the logs on the server in plaintext, which is unacceptable.
+ * Client priorities, their logic, and the lack of log sync result in messages coming to seemingly random places if several devices are used. That's not what users are used to now.
+ * p2p mode is possible, but seems to be incompatible with some other basic features (multi-client, log sync).
+
 ### Telegram
+
+ * Poses itself as very secure in its PR and on their homepage, but is insecure by default.
+ * Server-side logs in plaintext and no end-to-end encryption for everything but secret chats.
+ * Security is mentioned multiple times on their homepage. Secret chats aren't. Web client that doesn't have them — is.
+ * Attaches user profiles to mobile phones, and those are linked to passports or other ids in some countries.
+ * «2FA» is disabled by default — default auth is through SMS codes only.
+ * Even in «secret chats», it doesn't hint anyone that they should actually _validate_ the key manually. Instead, that option is hidden deep in the GUI. Without that, «secret» chats are pretty pointless.
+ * Stores your contacts on their servers, in plaintext.
+ * Note that your contacts means your phonebook.
 
 ### Slack
 
+ * No end-to-end encryption.
+ * Logs and saves everything on server-side. Server-side could do anything with your data.
+ * Proprietary, no source code.
+
 ### Gitter
+
+ * No end-to-end encryption.
+ * Logs and saves everything on server-side. Server-side could do anything with your data.
+ * Proprietary, no source code.
 
 ### Tox
 
+ * No log sync.
+ * Lacks basic features, doesn't seem to work reliably.
+ * Some incorrect design decisions, like adding another account requires copying the complete profile box to it, which is undesireble (you better don't export your profile to a usb flash disk for than and give it to your friend/colleague later, even after deleting the file).
+ * Crappy code. They even had `memset` + `free` and compared keys with `memcmp` in several places. Ref: [irungentoo/toxcore#1506](https://github.com/irungentoo/toxcore/pull/1506), but it looks like there are still more bad things happening there. 
+
 ### Irc
 
+ * No end-to-end encryption. Server-side could do anything with your data.
+ * No log sync.
+ * No offline messages without a bouncer, bouncers are insecure — they have your password if you need private messages for you account, and store logs on a thirdparty server (which VPS usually is).
+
 ### Skype
+
+ * No end-to-end encryption.
+ * Logs and saves everything on server-side. Server-side could do anything with your data.
+ * Reported as being a spyware several times — it was recursively reading browser profiles, was trying to read motherboard info, etc.
+ * Proprietary, no source code.
 
