@@ -103,12 +103,14 @@ _Note: this is a disjunction._
  * No end-to-end encryption.
  * Logs and saves everything on server-side. Server-side could do anything with your data.
  * Proprietary, no source code.
+ * Logs above 10k messages per team are paid, starting from $6.67 per user per month.
 
 ### Gitter
 
  * No end-to-end encryption.
  * Logs and saves everything on server-side. Server-side could do anything with your data.
  * Proprietary, no source code.
+ * Private rooms with more than 25 users are paid and cost $5 per user per month.
 
 ### Tox
 
