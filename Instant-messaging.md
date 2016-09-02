@@ -85,6 +85,7 @@ _Note: this is a disjunction._
  * When log sync is present — it's done by storing the logs on the server in plaintext, which is unacceptable.
  * Client priorities, their logic, and the lack of log sync result in messages coming to seemingly random places if several devices are used. That's not what users are used to now.
  * p2p mode is possible, but seems to be incompatible with some other basic features (multi-client, log sync).
+ * In federation mode (default) — some servers die, some get turned off for some time for maintance. Users are forced to wait or even switch to another servers, which involves notifying their whole contact list of the address change. 
 
 ### Telegram
 
