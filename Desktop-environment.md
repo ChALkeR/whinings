@@ -1,5 +1,7 @@
 # Desktop environment relalated issues
 
+## Warning: UNFINISHED
+
 Note: this is not about any specific DE.
 
 ## Security
