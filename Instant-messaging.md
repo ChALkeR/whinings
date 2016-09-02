@@ -55,7 +55,12 @@ _Note: this is a conjunction._
  * No true «offline» messages by default — those will get delivered only when the sender and the recepient will have at least one device online at the same moment. Given how often people are online now, mobile phones and desktop PCs — this is probably a better choice then queing the messages elsewhere. Users could work-around that by having an instance running somewhere, or by selecting an undelivered messages server (see above).
  * Voice and video could require some work to reduce lag. Or not.
  * Spam/bot protection in chat rooms is not covered here.
- 
+
+## Optional features
+
+ * Nameservers — to register your id as `name@example.org`. Those are independent from the network, and that binding should be signed by the id itself — so that the nameserver couldn't route to an id that has not agreed to be named. It could rote to the wrong id, so any accounts retrieved this way should be unvalidates (as the ones retrieved by most other means).
+ * Transports — those would be possible only between your own PC and you other clients. So, if a user runs a client on a PC and uses that to login to other networks (could be done through libpurble), they could use such other networks from any other device by routing messages through the PC. This could be useful as a multi-protocol mobile client that doesn't consume too much resources. Note that connections over insecure networks (and almost all of them are insecure without OTR) should be marked such in a clearly visible way in the GUI of both desktop and mobile clients.
+
 ## What does an insane instant messenger look like?
 
 _Note: this is a disjunction._
