@@ -21,6 +21,7 @@ _Note: this is a conjunction._
 * Cross-platform, work on any devices
 * FLOSS
 * Message delivery should be guaranteed, i.e. if a message was not delivered for some reason — it should be resent.
+* Messages should be ordered correctly (in logical order), if Alice sent A first, then B — Bob should see it that way.
 
 ## How?
 
@@ -112,6 +113,7 @@ _Note: this is a disjunction._
  * Logs and saves everything on server-side. Server-side could do anything with your data.
  * Proprietary, no source code.
  * Private rooms with more than 25 users are paid and cost $5 per user per month.
+ * Incorrect message delivery order in case of connection issues.
 
 ### Tox
 
@@ -133,3 +135,15 @@ _Note: this is a disjunction._
  * Reported as being a spyware several times — it was recursively reading browser profiles, was trying to read motherboard info, etc.
  * Proprietary, no source code.
 
+### VK
+
+ * No end-to-end encryption.
+ * Logs and saves everything on server-side. Server-side could do anything with your data.
+ * Proprietary, no source code.
+ * Incorrect message delivery order in case of connection issues.
+
+### Facebook
+
+ * No end-to-end encryption.
+ * Logs and saves everything on server-side. Server-side could do anything with your data.
+ * Proprietary, no source code.
