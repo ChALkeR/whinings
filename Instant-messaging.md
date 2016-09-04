@@ -100,6 +100,8 @@ _Note: this is a disjunction._
  * Even in «secret chats», it doesn't hint anyone that they should actually _validate_ the key manually. Instead, that option is hidden deep in the GUI. Without that, «secret» chats are pretty pointless.
  * Stores your contacts on their servers, in plaintext.
  * Note that your contacts means your phonebook.
+ * Server-side is proprietary, no source code, not possible to run an independent network.
+ * Becase of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
 
 ### Slack
 
@@ -107,14 +109,18 @@ _Note: this is a disjunction._
  * Logs and saves everything on server-side. Server-side could do anything with your data.
  * Proprietary, no source code.
  * Logs above 10k messages per team are paid, starting from $6.67 per user per month.
+ * Server-side is also proprietary, no source code, not possible to run an independent network.
+ * Becase of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
 
 ### Gitter
 
  * No end-to-end encryption.
  * Logs and saves everything on server-side. Server-side could do anything with your data.
- * Proprietary, no source code.
  * Private rooms with more than 25 users are paid and cost $5 per user per month.
  * Incorrect message delivery order in case of connection issues.
+ * Proprietary, no source code for the client.
+ * Server-side is also proprietary, no source code, not possible to run an independent network.
+ * Becase of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
 
 ### Tox
 
@@ -134,17 +140,23 @@ _Note: this is a disjunction._
  * No end-to-end encryption.
  * Logs and saves everything on server-side. Server-side could do anything with your data.
  * Reported as being a spyware several times — it was recursively reading browser profiles, was trying to read motherboard info, etc.
- * Proprietary, no source code.
+ * Proprietary, no source code for the client.
+ * Server-side is also proprietary, no source code, not possible to run an independent network.
+ * Becase of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
 
 ### VK
 
  * No end-to-end encryption.
  * Logs and saves everything on server-side. Server-side could do anything with your data.
- * Proprietary, no source code.
  * Incorrect message delivery order in case of connection issues.
+ * Proprietary, no source code for the client.
+ * Server-side is also proprietary, no source code, not possible to run an independent network.
+ * Becase of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
 
 ### Facebook
 
  * No end-to-end encryption.
  * Logs and saves everything on server-side. Server-side could do anything with your data.
- * Proprietary, no source code.
+ * Proprietary, no source code for the client.
+ * Server-side is also proprietary, no source code, not possible to run an independent network.
+ * Becase of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
