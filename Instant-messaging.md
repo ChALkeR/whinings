@@ -75,6 +75,7 @@ _Note: this is a disjunction._
 * No end-to-end encryption
 * Has end-to-end encryption or other secure features, but fails to explain users how to use it
 * Unsafe defaults
+* Broken message delivery (incorrect order, etc).
 
 ## What's wrong with …
 
