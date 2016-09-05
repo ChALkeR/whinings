@@ -162,3 +162,6 @@ _Note: this is a disjunction._
  * Proprietary, no source code for the client.
  * Server-side is also proprietary, no source code, not possible to run an independent network.
  * Becase of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
+
+### Pidgin, Chatsecure, Xabber, Empthy, QiP
+ * See [Jabber](#jabber).
