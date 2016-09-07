@@ -2,24 +2,24 @@
 
 _Note: this is a conjunction._
 
-* Secure
-* Peer to peer, no centralized auth
-* Supports logs and syncrhonizes them
-* Deleteable logs (one-side deleting, but from all devices)
-* End-to-end encryption
-* Three states for contacts — unvalidated (default), validated, compromised
-* Suggest validating contacts (and other means of promoting security)
-* Simple contact sharing
-* Messages should be received by all devices at the same time, no blocking and no «priorities»
-* Voice and video
-* File transfer
-* Sensible protection from stealing an authorized device (to the extent possible)
-* Stealing an authorized device shouldn't make previous traffic decryptable
-* Chat rooms (aka groups), private or public
-* Audio/video multiconference, private or public
-* No self-invented crypto, instead built on existing libraries
-* Cross-platform, work on any devices
-* FLOSS
+* Secure.
+* Peer to peer, no centralized auth.
+* Supports logs and syncrhonizes them.
+* Deleteable logs (one-side deleting, but from all devices).
+* End-to-end encryption.
+* Three states for contacts — unvalidated (default), validated, compromised.
+* Suggest validating contacts (and other means of promoting security).
+* Simple contact sharing.
+* Messages should be received by all devices at the same time, no blocking and no «priorities».
+* Voice and video.
+* File transfer.
+* Sensible protection from stealing an authorized device (to the extent possible).
+* Stealing an authorized device shouldn't make previous traffic decryptable.
+* Chat rooms (aka groups), private or public.
+* Audio/video multiconference, private or public.
+* No self-invented crypto, instead built on existing libraries.
+* Cross-platform, work on any devices.
+* FLOSS.
 * Message delivery should be guaranteed, i.e. if a message was not delivered for some reason — it should be resent.
 * Messages should be ordered correctly (in logical order), if Alice sent A first, then B — Bob should see it that way.
 
