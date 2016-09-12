@@ -163,5 +163,5 @@ _Note: this is a disjunction._
  * Server-side is also proprietary, no source code, not possible to run an independent network.
  * Because of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
 
-### Pidgin, Empathy, KDE-Telepathy, Chatsecure, Xabber, QiP...
+### Pidgin, Empathy, KDE-Telepathy, Chatsecure, Xabber, QIP...
  * See [Jabber](#jabber) (or any other protocol that you are actually using).
