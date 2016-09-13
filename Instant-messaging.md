@@ -165,3 +165,15 @@ _Note: this is a disjunction._
 
 ### Pidgin, Empathy, KDE-Telepathy, Chatsecure, Xabber, QIP...
  * See [Jabber](#jabber) (or any other protocol that you are actually using).
+
+### Ring
+
+ TODO
+
+### Retroshare
+
+ TODO
+
+### Bleep
+
+ TODO
