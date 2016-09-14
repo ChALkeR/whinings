@@ -181,3 +181,7 @@ _Note: this is a disjunction._
 ### Hangouts
 
  TODO
+
+### Signal
+
+ TODO
