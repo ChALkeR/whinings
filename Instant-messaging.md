@@ -185,3 +185,16 @@ _Note: this is a disjunction._
 ### Signal
 
  TODO
+
+### Snapchat
+
+ TODO
+
+### iMessage
+
+ TODO
+
+### Viber
+
+ TODO
+
