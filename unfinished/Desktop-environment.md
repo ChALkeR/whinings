@@ -60,6 +60,8 @@ E.g. on huge vector wallpapers by default, gradient banding is undesired. Adding
 
 #### Example: Konqueror
 
+_Note: this was about and old version, it now uses WebEngine as one of the possible backends and supports HiDPI. I need to replace or update this section._
+
 I really am not sure what is the point in bundling a browser that doesn't work in a stable release.
 
 Konqueror can't even correctly render it's own website, also it doesn't support HiDPI — a significant amount of
