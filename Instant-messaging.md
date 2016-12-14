@@ -84,7 +84,7 @@ _Note: this is a disjunction._
  * End-to-end encryption (OTR) is optional and is seldom used.
  * A lot of extensions (XEPs), everything is implemented though them. Part of those were never finished, part of those are already dead.
  * As a result — a lot of incompatible clients that don't work with basic features.
- * No long sync usually.
+ * No log sync usually.
  * When log sync is present — it's done by storing the logs on the server in plaintext, which is unacceptable.
  * Client priorities, their logic, and the lack of log sync result in messages coming to seemingly random places if several devices are used. That's not what users are used to now.
  * p2p mode is possible, but seems to be incompatible with some other basic features (multi-client, log sync).
