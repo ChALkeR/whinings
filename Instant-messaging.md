@@ -117,12 +117,13 @@ _Note: this is a disjunction._
 ### Gitter
 
  * No end-to-end encryption.
+ * Centralized architecture, will all it's drawbacks.
  * Logs and saves everything on server-side. Server-side could do anything with your data.
  * Private rooms with more than 25 users are paid and cost $5 per user per month.
  * Incorrect message delivery order in case of connection issues.
- * Proprietary, no source code for the client.
- * Server-side is also proprietary, no source code, not possible to run an independent network.
- * Because of previous point — no guarantees, the whole chat network could be shut down or restricted at any time.
+ * ~Proprietary, no source code for the client.~ *upd: Gitter has been open-sourced by GitLab in 2017 when they aquired it.*
+ * ~Server-side is also proprietary, no source code, not possible to run an independent network.~
+ * Any server could be shut down or restricted at any time.
 
 ### Tox
 
