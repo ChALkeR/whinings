@@ -206,3 +206,7 @@ _Note: this is a disjunction._
 ### Matrix
 
  TODO
+
+### Discord
+
+ TODO
