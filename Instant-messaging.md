@@ -169,7 +169,11 @@ _Note: this is a disjunction._
 
 ### Ring
 
- TODO
+I can't say that I looked at Ring close enough, but from the first glance most of their decisions taken during or after their last backwards-incompatible rewrite (done before 1.0 release) look good to me. In fact, Ring looks pretty nice on the technical side, as far as I can tell. 
+
+It's a bit poor on features side and it's unclear to me why they decided to build 7 different official clients though.
+
+I will try to take a closer look at it later, if you have any grievances on the technical side (related to issues described here) — feel free to open and issue or PR here with your input, I am interested in those and will take a look.
 
 ### Retroshare
 
